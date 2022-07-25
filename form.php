@@ -40,16 +40,16 @@ if (!preg_match('/[A_Za-z]{2}/', $username)) {
 if (isset($_POST['languages'])) {
     $arrayOfLanguages = $_POST['languages'];
     if (count($arrayOfLanguages) <= 5) {
-        echo "<p>You are multilingual</p>";
+        echo "You are multilingual";
     }
     if (count($arrayOfLanguages) > 5) {
-        echo "<p>Impressive. You have been studying quite a few computing languages</p>";
+        echo "Impressive. You have been studying quite a few computing languages";
     }
 
     foreach ($arrayOfLanguages as $oneLanguage) {
         echo "<br />" . $oneLanguage;
     }
 } else {
-    echo "<p>You are not studying any computer language(s)</p>";
+    echo "You are not studying any computer language(s)";
 }
 ?>
