@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 3</title>
+  </head>
+  <body>
+    <form action="form.php" method="post">
+      <fieldset>
+        <input name="username" placeholder="Username" type="text" />
+        <br />
+        <input name="password" placeholder="Password" type="password" />
+        <br />
+        <input name="student_id" placeholder="Student Number" type="text" />
+        <br />
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label><br />
+
+        <fieldset>
+          <input type="checkbox" id="C++" name="languages[]" value="C++" />
+          <label for="C++">C++</label><br />
+          <input type="checkbox" id="C#" name="languages[]" value="C#" />
+          <label for="C#">C#</label><br />
+          <input
+            type="checkbox"
+            id="Javascript"
+            name="languages[]"
+            value="Javascript"
+          />
+          <label for="Javascript">Javascript</label><br />
+          <input type="checkbox" id="Java" name="languages[]" value="Java" />
+          <label for="Java">Java</label><br />
+          <input type="checkbox" id="Perl" name="languages[]" value="Perl" />
+          <label for="Perl">Perl</label><br />
+          <input type="checkbox" id="PHP" name="languages[]" value="PHP" />
+          <label for="PHP">PHP</label><br />
+          <input
+            type="checkbox"
+            id="Python"
+            name="languages[]"
+            value="Python"
+          />
+          <label for="Python">Python</label><br />
+        </fieldset>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
