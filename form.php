@@ -39,7 +39,7 @@ if (!preg_match('/[A_Za-z]{2}/', $username)) {
 <?php
 if (isset($_POST['languages'])) {
     $arrayOfLanguages = $_POST['languages'];
-    if (count($arrayOfLanguages) <= 5) {
+    if (count($arrayOfLanguages) >= 2 && count($arrayOfLanguages) <= 5) {
         echo "You are multilingual";
     }
     if (count($arrayOfLanguages) > 5) {
